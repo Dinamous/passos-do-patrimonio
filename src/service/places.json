@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "Praça da Matriz ",
+      "endereco":"R. Jaime Gomes, 67-41 - Centro",
+      "LatLang":{
+        "latitude":-20.719007, 
+        "longitude":-46.610590 
+      }    
+    },
+    {
+        "id": 2,
+        "name": "Rua Goiás ",
+        "endereco":"R. Goiás, 700-768 - Jardim Colegio de Passos",
+        "LatLang":{
+          "latitude":-20.709215,
+          "longitude": -46.604028   
+        }  
+      },
+      {
+        "id": 3,
+        "name": "Praça da Matriz ",
+        "endereco":"R. Jaime Gomes, 67-41 - Centro",
+        "LatLang":{
+          "latitude":-20.719007, 
+          "longitude":-46.610590     
+        }
+      },
+      {
+        "id": 4,
+        "name": "Carmelo ",
+        "endereco":"R. São Sebastião, 2-60 - Carmelo",
+        "LatLang":{
+          "latitude":-20.716404, 
+          "longitude":-46.605696     
+        }
+      },
+      {
+        "id": 5,
+        "name": "Rua Manoel Patti ",
+        "endereco":"R. Dr. Manoel Patti, 358-418 - Centro",
+        "LatLang":{
+          "latitude":-20.724520, 
+          "longitude":-46.611500     
+        }
+      },
+      {
+        "id": 6,
+        "name": "Estação Cultura ",
+        "endereco":"R. Dr Sepúlveda, 502-684 - Coimbras",
+        "LatLang":{
+          "latitude":-20.708386, 
+          "longitude":-46.611477     
+        }
+      },
+      {
+        "id": 7,
+        "name": "Cemei",
+        "endereco":"R. do Canapé, 433-335 - Parque Casarao",
+        "LatLang":{
+          "latitude":-20.723695,  
+          "longitude":-46.590617     
+        }
+      },
+      {
+        "id": 8,
+        "name": "Fonte Praça do Rosário",
+        "endereco":"Praça Geraldo da Silva Maia - Centro",
+        "LatLang":{
+          "latitude":-20.721830,
+          "longitude": -46.609175     
+        }
+      }
+
+]
