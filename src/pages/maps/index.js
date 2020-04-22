@@ -6,11 +6,11 @@ import locais from '../../service/places.json'
 
 export default function Map(){
 
-const [incidents,setincidents] = useState([]);
+// const [locais,setLocais] = useState([]);
 
-useEffect(()=>{
-    setincidents(locais);
-},[])
+// useEffect(()=>{
+//     setLocais(locais);
+// },[])
 
   return(
         
@@ -49,20 +49,16 @@ useEffect(()=>{
         maxZoomLevel={18}
         showsPointsOfInterest={false}
         >
-        {locais.map(local =>{
-            
+        {locais.map(marker => (
             <Marker
-            key={local.id}
-            coordinate={local.LatLang}
-            title={local.name}
-            description={local.endereco}
+            key={marker.id}
+            coordinate={marker.LatLang}
+            title={marker.name}
+            description={marker.endereco}
             image={require('../../assets/pin.png')}
-          />
-        })}
-        {/* <Marker
-        coordinate={{latitude:-20.719007,longitude:-46.610590}}
-        title="local"
-        image={require('../../assets/pin.png')}/>*/}
+            />
+        ))
+        }
         </MapView> 
       </View>
    
