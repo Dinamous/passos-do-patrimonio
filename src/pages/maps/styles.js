@@ -8,4 +8,6 @@ export default StyleSheet.create({
         paddingHorizontal:24,
         paddingTop:Constants.statusBarHeight + 20,
     },
+     
+  
 });

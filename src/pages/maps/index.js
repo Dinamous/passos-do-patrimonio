@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import MapView,{ Marker } from 'react-native-maps';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions,FlatList,TouchableOpacity } from 'react-native';
 
 import locais from '../../service/places.json'
 
@@ -60,6 +60,9 @@ export default function Map(){
         ))
         }
         </MapView> 
+
+       
+         
       </View>
    
   );

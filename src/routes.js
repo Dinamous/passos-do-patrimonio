@@ -3,14 +3,53 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Feather} from '@expo/vector-icons';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Mapa from './pages/maps';
 import Locais from './pages/places';
 import Quiz from './pages/quiz';
 
+const Stack = createStackNavigator();
+
+function MapStackScreen() {
+  return (
+    <Stack.Navigator 
+    screenOptions={{
+        headerShown: false
+      }}>
+      <Stack.Screen  name="Mapa" component={Mapa} />
+      {/* <HomeStack.Screen name="Details" component={DetailsScreen} /> */}
+    </Stack.Navigator>
+  );
+}
+import PlaceDetails from './pages/placeDetails'
+
+function PlacesStackScreen() {
+    return (
+      <Stack.Navigator 
+      screenOptions={{
+        headerShown: false
+      }}>
+        <Stack.Screen name="Locais" component={Locais} />
+        <Stack.Screen name="PlaceDetails" component={PlaceDetails} />
+      </Stack.Navigator>
+    );
+  }
+
+  function QuizStackScreen() {
+    return (
+      <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}>
+        <Stack.Screen name="Quiz" component={Quiz} />
+        {/* <HomeStack.Screen name="Details" component={DetailsScreen} /> */}
+      </Stack.Navigator>
+    );
+  }
+
 
 const Tab = createBottomTabNavigator();
-
 
 export default function App() {
   return (
@@ -49,9 +88,9 @@ export default function App() {
           }
         }}
       >
-        <Tab.Screen name="Mapa" component={Mapa} />
-        <Tab.Screen name="Locais" component={Locais} />
-        <Tab.Screen name="Quiz" component={Quiz} />
+        <Tab.Screen name="Mapa" component={MapStackScreen} />
+        <Tab.Screen name="Locais" component={PlacesStackScreen} />
+        <Tab.Screen name="Quiz" component={QuizStackScreen} />
         
       </Tab.Navigator>
     </NavigationContainer>
